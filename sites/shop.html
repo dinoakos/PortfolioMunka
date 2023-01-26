@@ -9,74 +9,78 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    
 
     <title>Shop template</title>
 </head>
 
-<body>
+<body >
     <!--banner-->
     <div
-        class="bg-gradient-to-r from-cyan-500 to-pink-500 h-20 grid grid-cols-4 grid-cols-[10%_70%_10%_10%] divide-x-4 divide-violet-200/50">
+        class="bg-gradient-to-r from-cyan-500 to-pink-500 h-20 grid grid-cols-4 grid-cols-[20%_50%_15%_15%] lg:grid-cols-[10%_70%_10%_10%] divide-x-4 divide-violet-200/50">
         <div class="text-white text-3xl font-bold grid place-items-center whitespace-nowrap p-2">
-            Shop name
+            <span class="hidden lg:block">Shop name</span><span class="lg:hidden">Logo</span>
         </div>
         <div class="grid place-items-center p-2">
             <form class="w-full h-6/12">
-                <!-- adj neki majd react onclick hogy más border legyen ha onclick-->
                 <div class="flex">
                     <div class="relative w-full">
                         <input type="search" class="block p-2 w-full rounded-lg border-solid border-2 border-gray-200"
                             placeholder="Search for product" required>
                         <button type="submit"
                             class="absolute p-2 top-0 right-0 rounded-r-lg border-solid border-2 border-gray-200">
-                            Search
+                            <span class="hidden lg:block">Search</span><span class="lg:hidden">&#128269;</span>
                         </button>
                     </div>
                 </div>
             </form>
         </div>
-        <div class="text-white grid place-items-center p-2 text-3xl">
-            Cart &#128722;
+        <div class="text-white grid place-items-center p-2 text-4xl lg:text-3xl">
+            <span class="hidden lg:block">Cart</span> <span>&#128722;</span>
         </div>
-        <div class="text-white grid place-items-center p-2 text-3xl">
-            Account &#128100;
+        <div class="text-white grid place-items-center p-2 text-4xl lg:text-3xl">
+            <span class="hidden lg:block">Account</span> <span>&#128100;</span>
         </div>
     </div>
+    <!--banner end-->
+    <!--featured-->
     <hr class="border-2">
     <div class="bg-teal-100 text-gray-400 font-bold text-5xl text-center">
         Featured products
-    <div class="grid p-10 bg-teal-100 grid-cols-5 grid-cols-[8%_28%_28%_28%_8%]">
+    <div class="grid p-10 bg-teal-100 grid-rows-5  grid-rows-[0%_28%_28%_28%_0%] lg:grid-rows-1 lg:grid-cols-5 lg:grid-cols-[8%_28%_28%_28%_8%]">
         <!--empty for grid template reasons-->
         <div></div>
-        <!--make clickable make text size breakpoints-->
+        
         <div class="text-xl bg-gray-700 border-4 border-gray-200 rounded-lg m-10">
             <img class="rounded-lg" src="img/product.png" alt="product placeholder" />
             <div class="p-5">
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Placeholder </h5>
-                <p class="mb-3 font-normal text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce viverra, diam quis porttitor porta, enim sem fringilla nulla, sit amet posuere magna tortor ut velit.</p>
+                <p class="mb-3 font-normal text-gray-400 text-lg lg:text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce viverra, diam quis porttitor porta, enim sem fringilla nulla, sit amet posuere magna tortor ut velit.</p>
             </div>
         </div>
         <div class="text-xl bg-gray-700 border-4 border-gray-200 rounded-lg m-10">
             <img class="rounded-lg" src="img/product.png" alt="product placeholder" />
             <div class="p-5">
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Placeholder </h5>
-                <p class="mb-3 font-normal text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce viverra, diam quis porttitor porta, enim sem fringilla nulla, sit amet posuere magna tortor ut velit.</p>
+                <p class="mb-3 font-normal text-gray-400 text-lg lg:text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce viverra, diam quis porttitor porta, enim sem fringilla nulla, sit amet posuere magna tortor ut velit.</p>
             </div>
         </div>
         <div class="text-xl bg-gray-700 border-4 border-gray-200 rounded-lg m-10">
             <img class="rounded-lg" src="img/product.png" alt="product placeholder" />
             <div class="p-5">
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Placeholder </h5>
-                <p class="mb-3 font-normal text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce viverra, diam quis porttitor porta, enim sem fringilla nulla, sit amet posuere magna tortor ut velit.</p>
+                <p class="mb-3 font-normal text-gray-400 text-lg lg:text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce viverra, diam quis porttitor porta, enim sem fringilla nulla, sit amet posuere magna tortor ut velit.</p>
             </div>
         </div>
         <!--empty for grid template reasons-->
         <div></div>
     </div>
 </div>
+    <!--featured end-->
 <hr class="border-2">
     <!-- make clickable-->
-    <div class="bg-gradient-to-r from-cyan-500 to-pink-500 grid grid-cols-2 grid-cols-[20%_80%] divide-x-4 divide-violet-200/50">
+    <div class="bg-gradient-to-r from-cyan-500 to-pink-500 grid grid-cols-2 grid-cols-[0%_100%] lg:grid-cols-[20%_80%] divide-x-4 divide-violet-200/50">
         <div class="text-black text-xl grid whitespace-nowrap p-2 text-right bg-gray-200">
             <div class="overflow-y-scroll">
                 <li class="list-none">
@@ -101,47 +105,18 @@
                 </li>
             </div>
         </div>
-        <!-- generate as many as needed in react-->
-        <div class="grid grid-cols-5 p-2" id="products">
-            <div class="text-xl bg-gray-700 border-4 border-gray-200 rounded-lg m-10">
-                <img class="rounded-lg" src="img/product.png" alt="product placeholder" />
-                <div class="p-5">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Placeholder </h5>
-                </div>
-            </div>
+        
+        <!--product pipeline-->
+        <div class="grid grid-cols-2 lg:grid-cols-5 p-2" id="productsPipeline">
 
-            <div class="text-xl bg-gray-700 border-4 border-gray-200 rounded-lg m-10">
-                <img class="rounded-lg" src="img/product.png" alt="product placeholder" />
-                <div class="p-5">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Placeholder </h5>
-                </div>
-            </div>
-
-            <div class="text-xl bg-gray-700 border-4 border-gray-200 rounded-lg m-10">
-                <img class="rounded-lg" src="img/product.png" alt="product placeholder" />
-                <div class="p-5">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Placeholder </h5>
-                </div>
-            </div>
-
-            <div class="text-xl bg-gray-700 border-4 border-gray-200 rounded-lg m-10">
-                <img class="rounded-lg" src="img/product.png" alt="product placeholder" />
-                <div class="p-5">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Placeholder </h5>
-                </div>
-            </div>
-
-            <div class="text-xl bg-gray-700 border-4 border-gray-200 rounded-lg m-10">
-                <img class="rounded-lg" src="img/product.png" alt="product placeholder" />
-                <div class="p-5">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Placeholder </h5>
-                </div>
-            </div>
+            
 
 
         </div>
-        <!--til this point make it a "template" in react delete later you only left this in to see how it would look-->
+        <!--pipeline end-->
 
+
+        <script src="scripts/shop.js" type="text/babel"></script>
 </body>
 
 </html>

@@ -9,6 +9,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    
 
     <title>Chat</title>
 
@@ -21,122 +23,49 @@
             <!--delete these and generate them with react-->
 
             <div class="flex flex-row py-4 px-2 justify-center items-center border-b-2">
-                <div class="w-1/4">
-                    <img src="img/thispersondoesntexist.com.jpg" class="object-cover h-12 w-12 rounded-full" alt="" />
+                <div class="lg:w-1/4">
+                    <img src="img/thispersondoesntexist.com.jpg" class="object-cover h-full w-full lg:h-12 lg:w-12 rounded-full" alt="" />
                 </div>
                 <div class="w-full">
-                    <div class="text-lg font-bold">Teszt Elek</div>
-                    <div class="text-gray-400">Very important text</div>
+                    <div class="hidden lg:block text-lg font-bold">Teszt Elek</div>
+                    <div class="hidden lg:block text-gray-400">Very important text</div>
                 </div>
             </div>
 
             <div class="flex flex-row py-4 px-2 justify-center items-center border-b-2">
-                <div class="w-1/4">
-                    <img src="img/thispersondoesntexist.com.jpg" class="object-cover h-12 w-12 rounded-full" alt="" />
+                <div class="lg:w-1/4">
+                    <img src="img/thispersondoesntexist.com.jpg" class="object-cover h-full w-full lg:h-12 lg:w-12 rounded-full" alt="" />
                 </div>
                 <div class="w-full">
-                    <div class="text-lg font-bold">Teszt Elek</div>
-                    <div class="text-gray-400">Very important text</div>
+                    <div class="hidden lg:block text-lg font-bold">Teszt Elek</div>
+                    <div class="hidden lg:block text-gray-400">Very important text</div>
                 </div>
             </div>
-
             <div class="flex flex-row py-4 px-2 justify-center items-center border-b-2">
-                <div class="w-1/4">
-                    <img src="img/thispersondoesntexist.com.jpg" class="object-cover h-12 w-12 rounded-full" alt="" />
+                <div class="lg:w-1/4">
+                    <img src="img/thispersondoesntexist.com.jpg" class="object-cover h-full w-full lg:h-12 lg:w-12 rounded-full" alt="" />
                 </div>
                 <div class="w-full">
-                    <div class="text-lg font-bold">Teszt Elek</div>
-                    <div class="text-gray-400">Very important text</div>
+                    <div class="hidden lg:block text-lg font-bold">Teszt Elek</div>
+                    <div class="hidden lg:block text-gray-400">Very important text</div>
                 </div>
             </div>
-
             <div class="flex flex-row py-4 px-2 justify-center items-center border-b-2">
-                <div class="w-1/4">
-                    <img src="img/thispersondoesntexist.com.jpg" class="object-cover h-12 w-12 rounded-full" alt="" />
+                <div class="lg:w-1/4">
+                    <img src="img/thispersondoesntexist.com.jpg" class="object-cover h-full w-full lg:h-12 lg:w-12 rounded-full" alt="" />
                 </div>
                 <div class="w-full">
-                    <div class="text-lg font-bold">Teszt Elek</div>
-                    <div class="text-gray-400">Very important text</div>
+                    <div class="hidden lg:block text-lg font-bold">Teszt Elek</div>
+                    <div class="hidden lg:block text-gray-400">Very important text</div>
                 </div>
             </div>
-
             <div class="flex flex-row py-4 px-2 justify-center items-center border-b-2">
-                <div class="w-1/4">
-                    <img src="img/thispersondoesntexist.com.jpg" class="object-cover h-12 w-12 rounded-full" alt="" />
+                <div class="lg:w-1/4">
+                    <img src="img/thispersondoesntexist.com.jpg" class="object-cover h-full w-full lg:h-12 lg:w-12 rounded-full" alt="" />
                 </div>
                 <div class="w-full">
-                    <div class="text-lg font-bold">Teszt Elek</div>
-                    <div class="text-gray-400">Very important text</div>
-                </div>
-            </div>
-
-            <div class="flex flex-row py-4 px-2 justify-center items-center border-b-2">
-                <div class="w-1/4">
-                    <img src="img/thispersondoesntexist.com.jpg" class="object-cover h-12 w-12 rounded-full" alt="" />
-                </div>
-                <div class="w-full">
-                    <div class="text-lg font-bold">Teszt Elek</div>
-                    <div class="text-gray-400">Very important text</div>
-                </div>
-            </div>
-
-            <div class="flex flex-row py-4 px-2 justify-center items-center border-b-2">
-                <div class="w-1/4">
-                    <img src="img/thispersondoesntexist.com.jpg" class="object-cover h-12 w-12 rounded-full" alt="" />
-                </div>
-                <div class="w-full">
-                    <div class="text-lg font-bold">Teszt Elek</div>
-                    <div class="text-gray-400">Very important text</div>
-                </div>
-            </div>
-
-            <div class="flex flex-row py-4 px-2 justify-center items-center border-b-2">
-                <div class="w-1/4">
-                    <img src="img/thispersondoesntexist.com.jpg" class="object-cover h-12 w-12 rounded-full" alt="" />
-                </div>
-                <div class="w-full">
-                    <div class="text-lg font-bold">Teszt Elek</div>
-                    <div class="text-gray-400">Very important text</div>
-                </div>
-            </div>
-
-            <div class="flex flex-row py-4 px-2 justify-center items-center border-b-2">
-                <div class="w-1/4">
-                    <img src="img/thispersondoesntexist.com.jpg" class="object-cover h-12 w-12 rounded-full" alt="" />
-                </div>
-                <div class="w-full">
-                    <div class="text-lg font-bold">Teszt Elek</div>
-                    <div class="text-gray-400">Very important text</div>
-                </div>
-            </div>
-
-            <div class="flex flex-row py-4 px-2 justify-center items-center border-b-2">
-                <div class="w-1/4">
-                    <img src="img/thispersondoesntexist.com.jpg" class="object-cover h-12 w-12 rounded-full" alt="" />
-                </div>
-                <div class="w-full">
-                    <div class="text-lg font-bold">Teszt Elek</div>
-                    <div class="text-gray-400">Very important text</div>
-                </div>
-            </div>
-
-            <div class="flex flex-row py-4 px-2 justify-center items-center border-b-2">
-                <div class="w-1/4">
-                    <img src="img/thispersondoesntexist.com.jpg" class="object-cover h-12 w-12 rounded-full" alt="" />
-                </div>
-                <div class="w-full">
-                    <div class="text-lg font-bold">Teszt Elek</div>
-                    <div class="text-gray-400">Very important text</div>
-                </div>
-            </div>
-
-            <div class="flex flex-row py-4 px-2 justify-center items-center border-b-2">
-                <div class="w-1/4">
-                    <img src="img/thispersondoesntexist.com.jpg" class="object-cover h-12 w-12 rounded-full" alt="" />
-                </div>
-                <div class="w-full">
-                    <div class="text-lg font-bold">Teszt Elek</div>
-                    <div class="text-gray-400">Very important text</div>
+                    <div class="hidden lg:block text-lg font-bold">Teszt Elek</div>
+                    <div class="hidden lg:block text-gray-400">Very important text</div>
                 </div>
             </div>
 
@@ -144,9 +73,9 @@
         <div class="grid grid-rows-[8%_84%_8%] mx-5 h-screen">
             <div class="grid grid-cols-3 grid-cols-[5%_15%_80%] w-full bg-blue-300 m">
                 <div>
-                    <img src="img/thispersondoesntexist.com.jpg" class="object-cover h-full w-full rounded-full" alt="face" />
+                    <img src="img/thispersondoesntexist.com.jpg" class="hidden xl:block object-cover h-full w-full rounded-full" alt="face" />
                 </div>
-                <div class="flex justify-center items-center text-white text-5xl whitespace-nowrap">
+                <div class="lg:flex lg:justify-center lg:items-center text-white text-5xl whitespace-nowrap">
                     Teszt Elek
                 </div>
                 <div>
@@ -178,13 +107,14 @@
                 <div class="grid grid-cols-[90%_10%]">
                 <input class="h-full w-full bg-gray-300 rounded-l-2xl" type="text" placeholder="Message" />
                 <button type="button" class="inline-flex items-center justify-center rounded-r-lg px-4 py-3 text-white bg-blue-500">
-                    <span class="font-bold">Send</span>
+                    <span class="hidden lg:block font-bold">Send</span><span class="lg:hidden font-bold">&#8594;</span>
                 </div>
             </div>
         </div>
     </div>
 
     </div>
+    <script src="scripts/chat.js" type="text/babel"></script>
 </body>
 
 </html>
