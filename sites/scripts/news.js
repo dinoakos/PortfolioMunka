@@ -31,7 +31,7 @@ function fillNull(){
 fillNull();
 //this function adds 20 "new" news to the array which gets rendered
 function AllNews(){
-    for(let i = 0;i<5;i++){
+    for(let i = 0;i<20;i++){
         
         newsArray[newsArray.indexOf(null)]=hir;
     }
