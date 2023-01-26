@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+    <title>Lorem ipsum times</title>
+
+</head>
+
+<body>
+    <!--make responsive-->
+    <div class="grid place-items-center w-screen divide-y-8">
+        <div class="grid grid-cols-3 grid-cols-[20%_60%_20%] w-3/5 ">
+            <div class="grid place-items-center place-items-left">
+                <div class="font-bold" id="time">Local time</div>
+                <div id="space">Local place</div>
+            </div>
+            <div class="grid bold font-serif text-3xl place-items-center">
+                Lorem Ipsum Times
+            </div>
+            <div class="grid place-items-center place-items-right">
+                0°C
+            </div>
+        </div>
+
+        <div class="w-3/5">
+            <div class="grid grid-cols-2 grid-cols-[75%_25%] divide-x-2 divide-black/50">
+                <!--make pipeline infinite-->
+                <div id="newsPipeline" class="divide-y-2 divide-black pr-5">
+                    <div id="news" class="grid grid-cols-2 grid-cols-[30%_60%] ">
+                        <div>
+                            <div class="font-bold text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </div>
+                            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lobortis tempus erat,
+                                nec
+                                viverra orci facilisis a. Morbi nisi odio, venenatis nec dolor at, euismod scelerisque
+                                felis. Ut aliquam tortor lectus, eget . </div>
+                        </div>
+                        <div>
+                            <img src="img/newspaper.png" alt="newspaper">
+                        </div>
+                    </div>
+                    <div id="news" class="grid grid-cols-2 grid-cols-[30%_60%] ">
+                        <div>
+                            <div class="font-bold text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </div>
+                            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lobortis tempus erat,
+                                nec
+                                viverra orci facilisis a. Morbi nisi odio, venenatis nec dolor at, euismod scelerisque
+                                felis. Ut aliquam tortor lectus, eget . </div>
+                        </div>
+                        <div>
+                            <img src="img/newspaper.png" alt="newspaper">
+                        </div>
+                    </div>
+                    <div id="news" class="grid grid-cols-2 grid-cols-[30%_60%] ">
+                        <div>
+                            <div class="font-bold text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </div>
+                            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lobortis tempus erat,
+                                nec
+                                viverra orci facilisis a. Morbi nisi odio, venenatis nec dolor at, euismod scelerisque
+                                felis. Ut aliquam tortor lectus, eget . </div>
+                        </div>
+                        <div>
+                            <img src="img/newspaper.png" alt="newspaper">
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+
+
+
+                <div id="side">
+                    <div class="border-2 border-gray-200 m-10">
+                        <img src="img/newspaper.png" alt="newspaper" />
+                        <div class="p-5">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-black">Lorem ipsum </h5>
+                            <p class="mb-3 font-normal text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce viverra, diam quis porttitor porta.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
