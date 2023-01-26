@@ -44,7 +44,7 @@ ReactDOM.render(
 )
 
 window.onscroll = function() {
-    if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
+    if (window.innerHeight + window.pageYOffset+5 >= document.body.offsetHeight) {
         ReactDOM.render(
             <AllNews />,document.getElementById("newsPipeline"),
         )
