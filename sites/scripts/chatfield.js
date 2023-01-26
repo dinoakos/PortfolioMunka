@@ -1,55 +1,57 @@
-function Heads() {
+//what I want to render in the text pipeline
+function Texts() {
     return (
         <div>
-                <div class="flex justify-end mb-4">
-                  <div class="mr-2 p-5 bg-blue-300 rounded-l-3xl text-white">
+            <div class="flex justify-end mb-4">
+                <div class="mr-2 p-5 bg-blue-300 rounded-l-3xl text-white">
                     Lorem ipsum!
-                  </div>
-                  
                 </div>
-                <div class="flex justify-start mb-4">
-                  <div
+
+            </div>
+            <div class="flex justify-start mb-4">
+                <div
                     class="ml-2 p-5 bg-gray-400 rounded-r-3xl text-white">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
                     at praesentium, aut ullam delectus odio error sit rem. Architecto
                     nulla doloribus laborum illo rem enim dolor odio saepe,
                     consequatur quas?
-                  </div>
                 </div>
             </div>
+        </div>
     )
-    
+
 }
-console.log(<Heads />);
-let person = <Heads />;
-console.log(person);
-
-
-let headArray = new Array(100);
-function fillNull(){
-    for(let i = 0;i<headArray.length;i++){
-        
-        headArray[i]=null;
+//getting the correct object
+let text = <Texts />;
+//making an array, the length will determine the maximum number of texts on the page
+let textArray = new Array(100);
+//filling it with nulls so we can reference it later
+function fillNull() {
+    for (let i = 0; i < textArray.length; i++) {
+        textArray[i] = null;
     }
 }
 fillNull();
-function AllHead(){
-    for(let i = 0;i<10;i++){
-        console.log(headArray.indexOf(null));
-        headArray[headArray.indexOf(null)]=person;
+//this function adds 10 "new" texts to the array which gets rendered
+function AllText() {
+    for (let i = 0; i < 10; i++) {
+
+        textArray[textArray.indexOf(null)] = text;
     }
-    
-    return(headArray);
+
+    return (textArray);
 }
+//this is here so the site loads text by default
 ReactDOM.render(
-    <AllHead />,document.getElementById("chat"),
+    <AllText />, document.getElementById("chat"),
 )
-let elementHead = document.getElementById("chat");
-elementHead.onscroll = function() {
-    if (elementHead.scrollTop + elementHead.offsetHeight+5 >= elementHead.scrollHeight ) {
+//when scrolling and at the buttom of the page this inserts more texts
+let elementText = document.getElementById("chat");
+elementText.onscroll = function () {
+    if (elementText.scrollTop + elementText.offsetHeight + 5 >= elementText.scrollHeight) {
         ReactDOM.render(
-            <AllHead />,document.getElementById("chat"),
+            <AllText />, document.getElementById("chat"),
         )
-        console.log("end");
+
     }
-   }
+}

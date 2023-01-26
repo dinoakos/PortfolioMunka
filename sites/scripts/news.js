@@ -1,4 +1,4 @@
-
+//what I want to render in the news pipeline
 function News() {
     return (
         <div id="news" class="grid grid-cols-1 lg:grid-cols-2 lg:grid-cols-[50%_50%] ">
@@ -18,37 +18,37 @@ function News() {
     )
     
 }
-console.log(<News />);
+//getting the correct object
 let hir = <News />;
-console.log(hir);
-
-
+//making an array, the length will determine the maximum number of news on the page
 let newsArray = new Array(100);
+//filling it with nulls so we can reference it later
 function fillNull(){
     for(let i = 0;i<newsArray.length;i++){
-        
         newsArray[i]=null;
     }
 }
 fillNull();
+//this function adds 20 "new" news to the array which gets rendered
 function AllNews(){
     for(let i = 0;i<5;i++){
-        console.log(newsArray.indexOf(null));
+        
         newsArray[newsArray.indexOf(null)]=hir;
     }
     
     return(newsArray);
 }
+//this is here so the site loads news by default
 ReactDOM.render(
     <AllNews />,document.getElementById("newsPipeline"),
 )
-
+//when scrolling and at the buttom of the page this inserts more news
 window.onscroll = function() {
     if (window.innerHeight + window.pageYOffset+5 >= document.body.offsetHeight) {
         ReactDOM.render(
             <AllNews />,document.getElementById("newsPipeline"),
         )
-        console.log("end");
+        
     }
    }
 
